@@ -14,6 +14,7 @@
 		6101A3362AF038570057780F /* ZunigaSoundBoard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6101A3342AF038570057780F /* ZunigaSoundBoard.xcdatamodeld */; };
 		6101A3382AF038590057780F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6101A3372AF038590057780F /* Assets.xcassets */; };
 		6101A33B2AF038590057780F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6101A3392AF038590057780F /* LaunchScreen.storyboard */; };
+		6101A3472AF041510057780F /* SoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6101A3462AF041510057780F /* SoundViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		6101A3372AF038590057780F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6101A33A2AF038590057780F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6101A33C2AF038590057780F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6101A3462AF041510057780F /* SoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				6101A3392AF038590057780F /* LaunchScreen.storyboard */,
 				6101A33C2AF038590057780F /* Info.plist */,
 				6101A3342AF038570057780F /* ZunigaSoundBoard.xcdatamodeld */,
+				6101A3462AF041510057780F /* SoundViewController.swift */,
 			);
 			path = ZunigaSoundBoard;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 				6101A3302AF038570057780F /* ViewController.swift in Sources */,
 				6101A32C2AF038570057780F /* AppDelegate.swift in Sources */,
 				6101A32E2AF038570057780F /* SceneDelegate.swift in Sources */,
+				6101A3472AF041510057780F /* SoundViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
