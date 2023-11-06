@@ -63,19 +63,19 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOMBRE:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URz-ti-v7h">
-                                <rect key="frame" x="20" y="286" width="374" height="21"/>
+                                <rect key="frame" x="20" y="366" width="374" height="21"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre de audio" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SUP-2y-fMe">
-                                <rect key="frame" x="20" y="327" width="374" height="34"/>
+                                <rect key="frame" x="20" y="407" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y22-dz-1fn">
-                                <rect key="frame" x="125" y="381" width="164" height="31"/>
+                                <rect key="frame" x="125" y="461" width="164" height="31"/>
                                 <color key="backgroundColor" systemColor="linkColor"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -92,12 +92,25 @@
                                     <action selector="reproducirTapped:" destination="2aY-Wj-7Fx" eventType="touchUpInside" id="sqQ-be-tO2"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NOL-Oi-BCm">
+                                <rect key="frame" x="100" y="276" width="214" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="JnY-Eu-qAL">
+                                <rect key="frame" x="148" y="314" width="118" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="volumeSliderChanged:" destination="2aY-Wj-7Fx" eventType="valueChanged" id="ggX-c6-eTN"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5wI-6T-phb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="URz-ti-v7h" firstAttribute="centerX" secondItem="SUP-2y-fMe" secondAttribute="centerX" id="1uj-sf-HX5"/>
-                            <constraint firstItem="URz-ti-v7h" firstAttribute="top" secondItem="ckd-Co-K3p" secondAttribute="bottom" constant="30" id="5Po-tl-l2k"/>
+                            <constraint firstItem="URz-ti-v7h" firstAttribute="top" secondItem="ckd-Co-K3p" secondAttribute="bottom" constant="110" id="5Po-tl-l2k"/>
                             <constraint firstItem="5wI-6T-phb" firstAttribute="trailing" secondItem="ckd-Co-K3p" secondAttribute="trailing" constant="100" id="7sp-oS-O2h"/>
                             <constraint firstItem="URz-ti-v7h" firstAttribute="leading" secondItem="5wI-6T-phb" secondAttribute="leading" constant="20" id="7uL-hc-Zvp"/>
                             <constraint firstItem="dYo-0i-twD" firstAttribute="centerX" secondItem="ckd-Co-K3p" secondAttribute="centerX" id="CMP-7T-T3H"/>
@@ -110,9 +123,13 @@
                             <constraint firstItem="5wI-6T-phb" firstAttribute="trailing" secondItem="dYo-0i-twD" secondAttribute="trailing" constant="100" id="Qet-kC-jsU"/>
                             <constraint firstItem="5wI-6T-phb" firstAttribute="trailing" secondItem="URz-ti-v7h" secondAttribute="trailing" constant="20" id="XOD-t9-UPx"/>
                             <constraint firstItem="SUP-2y-fMe" firstAttribute="top" secondItem="URz-ti-v7h" secondAttribute="bottom" constant="20" id="YKe-7E-Y31"/>
+                            <constraint firstItem="NOL-Oi-BCm" firstAttribute="leading" secondItem="5wI-6T-phb" secondAttribute="leading" constant="100" id="Yzf-Gm-vhA"/>
+                            <constraint firstItem="ckd-Co-K3p" firstAttribute="centerX" secondItem="NOL-Oi-BCm" secondAttribute="centerX" id="aJG-z4-kOn"/>
+                            <constraint firstItem="NOL-Oi-BCm" firstAttribute="top" secondItem="ckd-Co-K3p" secondAttribute="bottom" constant="20" id="bId-aS-VTM"/>
                             <constraint firstItem="Y22-dz-1fn" firstAttribute="leading" secondItem="5wI-6T-phb" secondAttribute="leading" constant="125" id="ets-hl-D2k"/>
                             <constraint firstItem="5wI-6T-phb" firstAttribute="trailing" secondItem="Y22-dz-1fn" secondAttribute="trailing" constant="125" id="gst-3q-Vhe"/>
                             <constraint firstItem="ckd-Co-K3p" firstAttribute="leading" secondItem="5wI-6T-phb" secondAttribute="leading" constant="100" id="mcX-Lv-Y3h"/>
+                            <constraint firstItem="5wI-6T-phb" firstAttribute="trailing" secondItem="NOL-Oi-BCm" secondAttribute="trailing" constant="100" id="nON-cd-wx2"/>
                             <constraint firstItem="SUP-2y-fMe" firstAttribute="leading" secondItem="5wI-6T-phb" secondAttribute="leading" constant="20" id="ovg-mG-g8n"/>
                             <constraint firstItem="ckd-Co-K3p" firstAttribute="top" secondItem="dYo-0i-twD" secondAttribute="bottom" constant="20" id="xRo-NV-rbk"/>
                         </constraints>
@@ -123,6 +140,8 @@
                         <outlet property="grabarButton" destination="dYo-0i-twD" id="5pm-XY-6Hw"/>
                         <outlet property="nombreTextField" destination="SUP-2y-fMe" id="0za-Ao-ZWR"/>
                         <outlet property="reproducirButton" destination="ckd-Co-K3p" id="fMo-Rz-W23"/>
+                        <outlet property="timeLabel" destination="NOL-Oi-BCm" id="yh1-we-2aj"/>
+                        <outlet property="volumeSlider" destination="JnY-Eu-qAL" id="P7T-Ol-LAv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cfL-Zo-2hv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
